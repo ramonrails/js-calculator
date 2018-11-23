@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>JS Calculator</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class="calculator">
+      <div class="digital-display">0</div>
+
+      <div class="calculator-keys">
+        <button class="operator-key" data-action="divide">÷</button>
+        <button class="operator-key" data-action="multiply">&times;</button>
+        <button class="operator-key" data-action="subtract">-</button>
+        <button class="operator-key" data-action="add">+</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">CE</button>
+        <button class="equal-to-key" data-action="calculate">=</button>
+      </div>
+    </div>
+  </div>
+
+  <!--
+      load javascript AFTER the HTML code is already loaded
+      otherwise document.querySelector('.calculator') => null
+      because JavaScript works with DOM objects, not HTML file
+    -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+/* javascript calculator UI */
+
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+button { font-size: inherit; border: 0; }
+html { font-size: 2em; }
+
+body {
+  background-color: dimgrey;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.calculator {
+  border-radius: 5px;
+  box-shadow: 0 0 25px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 1em;
+}
+
+.digital-display {
+  background-color: darkcyan;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.5em;
+  text-align: right;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator-keys > * {
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+.operator-key {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.equal-to-key {
+  background-color: #333;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5em;
+  grid-column: -2;
+  grid-row: 2 / span 4;
+}
